@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.Scanner;
 
-class Gusser{
+class gusser {
      int gNum;
    final private Scanner sc = new Scanner(System.in);
     public void guesserNumber() //FETR00002
@@ -27,7 +27,7 @@ class player{
 }
 
 
-class Umpire{
+class umpire {
     private int numFromGusser;
     private int numFromPlayer1;
     private int numFromPlayer2;
@@ -35,7 +35,7 @@ class Umpire{
 
     public void collectNumbers()
     {
-        Gusser g = new Gusser();
+        gusser g = new gusser();
         g.guesserNumber();
         numFromGusser = g.gNum;
         player p1 = new player();
@@ -78,7 +78,7 @@ class Umpire{
 }
 public class gussergame {
     public static void main(String[] args) {
-        Umpire u = new Umpire();
+        umpire u = new umpire();
         u.collectNumbers();
         u.result();
 
